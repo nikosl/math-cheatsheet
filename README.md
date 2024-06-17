@@ -59,7 +59,7 @@ $$
 
 escape `$` :
 
-- `\` inside expression, `$\$x$`
+- `\` inside expression,  `$\$x$`
 - `<span></span>` outside expression
 
 ## Math
@@ -91,7 +91,7 @@ Symbol                 | Name        | Description                              
 $\land$                | And         |                                             | \land
 $\lor$                 | Or          |                                             | \lor
 $\lnot$                | Not         |                                             | \lnot
-$\oplus$, or $\veebar$ | XOr         |                                             | \loplus
+$\oplus$, or $\veebar$ | XOr         |                                             | \oplus
 $\forall$              | forall      |                                             | \forall
 $\exists$              | exists      |                                             | \exists
 $\iff$                 | iff         | if and only if, $P\implies Q; Q\implies P$  | \iff
