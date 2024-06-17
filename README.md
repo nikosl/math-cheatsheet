@@ -47,12 +47,12 @@ $$
 
 ### Sets
 
-Symbol         | Name            | Description                        | LaTeX    I | Examples
+Symbol         | Name            | Description                        | LaTeX      | Examples
 ---------------|-----------------|------------------------------------|------------|----------------------------------
-$\{\}$         | Set             |                                    | \{\}       | $\{123\}$
+$\{ \}$         | Set             |                                    | \\{\\}       | $\{1, 2, 3\}$
 $\emptyset$    | Empty Set       |                                    | \emptyset  | $\emptyset$
-$\in$          | Element         | element part of the set            | \in        | $1\in123$
-$\notin$       | not an element  | element not in set                 | \notin     | $4\notin123$
+$\in$          | Element         | element part of the set            | \in        | $1\in\{1, 2, 3\}$
+$\notin$       | not an element  | element not in set                 | \notin     | $4\notin\{1, 2, 3\}$
 $\mid$, or $:$ | such that       | set builder, for all x : condition | \mid       | $\{x\mid x \gt 1\} = \{2, 3, 4\}$
 $\cup$         | union           |                                    | \cup       | $$
 $\cap$         | intersection    |                                    | \cap       | $$
@@ -74,6 +74,8 @@ $\exists$              | exists |             | \exists
 
 ### References
 
-[Github - writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
-[https://www.geeksforgeeks.org/set-notations-in-latex/](https://www.geeksforgeeks.org/set-notations-in-latex/)
-[http://notes.imt-decal.org/sets/cheat-sheet.html](http://notes.imt-decal.org/sets/cheat-sheet.html)
+* [Github - writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
+* [https://www.geeksforgeeks.org/set-notations-in-latex/](https://www.geeksforgeeks.org/set-notations-in-latex/)
+
+* [http://notes.imt-decal.org/sets/cheat-sheet.html](http://notes.imt-decal.org/sets/cheat-sheet.html)
