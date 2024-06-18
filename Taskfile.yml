@@ -1,0 +1,43 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  LINTIMG: ghcr.io/igorshubovych/markdownlint-cli:latest
+  MD: README.md
+  OUT: math-cheatsheet.pdf
+
+tasks:
+  default:
+    cmds:
+      - task: build
+  build:
+    desc: Convert to pdf
+    deps:
+      - lint
+    cmds:
+      - >
+        docker run -it --rm -v "{{.ROOT_DIR}}":/src pandoc/latex
+        --pdf-engine=xelatex
+        --highlight-style tango
+        --toc -N
+        -V colorlinks
+        -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm"
+        -V fontsize=12pt
+        -o /src/{{.OUT}}
+        /src/{{.MD}}
+
+    sources:
+      - "{{.MD}}"
+    generates:
+      - "{{.OUT}}"
+
+  lint:
+    cmd: >
+      docker run -it --rm -v "{{.ROOT_DIR}}":/src "{{.LINTIMG}}"
+      /src/{{.MD}} --config /src/.markdownlint.json
+
+  clean:
+    desc: Remove generated files
+    cmds:
+      - rm -f "{{.OUT}}"
