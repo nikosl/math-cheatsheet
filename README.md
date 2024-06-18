@@ -20,7 +20,9 @@
 
 ## Math expressions
 
-Prefer backtick math syntax[^1]. Inline with `$``$` and block with ` ```math`.
+If sets are not rendered correctly, use double backslash or backtick math syntax[^1],
+inline with `$``$` and block with ` ```math`.
+
 Each delimiter could render differently under different platforms.
 
 ### Inline
@@ -113,11 +115,11 @@ $\cup$          | union           | $`A\cup B=\{1, 3, 5\}`$
 $\cap$          | intersection    | $`A\cap B=\{1, 3, 5\}`$
 $\subset$       | proper subset   | $`A=\{1, 2, 3\}; B=\{1, 2\}; A\subset B `$
 $\subseteq$     | subset          | $`A=\{1, 2\}; B=\{1, 2\}; A\subseteq B `$
-$\supset$       | proper superset | $`A=\{1, 2, 3\}; B=\{1, 2\}; A\supset B B\subset A`$
-$\supseteq$     | superset        | $`A=\{1, 2\}; B=\{1, 2\}; A\supseteq B B\subseteq A`$
-$\times$        | Cartesian       | $`A=\{1, 2\}$; $B=\{3, 4\}$; $A \times B=\{(1, 3), (2, 3), (1, 4), (2, 4)\}`$
+$\supset$       | proper superset | $`A=\{1, 2, 3\}; B=\{1, 2\}; A\supset B \text{and} B\subset A`$
+$\supseteq$     | superset        | $`A=\{1, 2\}; B=\{1, 2\}; A\supseteq B \text{and} B\subseteq A`$
+$\times$        | Cartesian       | $`A=\{1, 2\}; B=\{3, 4\}; A \times B=\{(1, 3), (2, 3), (1, 4), (2, 4)\}`$
 $A^\complement$ | complement      | $`U=\{1, 2, 3\}; A=\{1, 2\}; A^\complement \implies \{3\}`$
-$\rightarrow$   | function        | $f(x)=x+2; $ is a function $f: \mathbb{Z} \rightarrow \mathbb{Z}$
+$\rightarrow$   | function        | $f(x)=x+2;$ is a function $f: \mathbb{Z} \rightarrow \mathbb{Z}$
 $\mapsto$       | function map    | $f(x)=x+2$ can be written as $f:x\mapsto x+2$
 
 ## References
@@ -140,4 +142,4 @@ $\mapsto$       | function map    | $f(x)=x+2$ can be written as $f:x\mapsto x+2
 
 - [Public Domain, CC0 1.0 Universal](https://creativecommons.org/public-domain/cc0/)
 
-[^1]:use **double backslash '\\'** or [use backtick math syntax to render **curly braces {}** correctly](https://github.com/orgs/community/discussions/16993)
+[^1]: [Github issue](https://github.com/orgs/community/discussions/16993)
